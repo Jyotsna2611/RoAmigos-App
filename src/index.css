@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Syne', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Mint Explorer Design Tokens */
+    --color-bg-main: #F5FAF5;
+    --color-bg-secondary: #EDF5EE;
+    --color-bg-card: #FFFFFF;
+    --color-mint-primary: #BDE5CF;
+    --color-mint-soft: #DDF1E4;
+    --color-sage: #A8C9B2;
+    --color-forest: #285943;
+    --color-text-dark: #243D32;
+    --color-text-secondary: #718579;
+    --color-text-muted: #9BAA9F;
+    --color-cream: #FFFDF4;
+    --color-lavender: #E9E2F7;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #F5FAF5;
+    color: #243D32;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    color: #243D32;
+  }
+}
+
+/* Custom modern scrollbars in Mint Explorer soft tones */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EDF5EE;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 201, 178, 0.45);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 201, 178, 0.75);
+}
+
+/* Mint Explorer subtle glows */
+.glow-mint {
+  box-shadow: 0 0 24px -4px rgba(189, 229, 207, 0.45);
+}
+
+.glow-sage {
+  box-shadow: 0 0 24px -4px rgba(168, 201, 178, 0.35);
+}
+
+.glow-forest {
+  box-shadow: 0 0 24px -4px rgba(40, 89, 67, 0.2);
+}
+
+.glow-lavender {
+  box-shadow: 0 0 24px -4px rgba(233, 226, 247, 0.45);
+}
+
+/* Mint Explorer glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 201, 178, 0.35);
+  box-shadow: 0 4px 20px -2px rgba(40, 89, 67, 0.04);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 201, 178, 0.3);
+  box-shadow: 0 4px 16px -2px rgba(40, 89, 67, 0.03);
+}
+
+.glass-card:hover {
+  border-color: rgba(168, 201, 178, 0.6);
+  box-shadow: 0 10px 25px -4px rgba(40, 89, 67, 0.07);
+}
+

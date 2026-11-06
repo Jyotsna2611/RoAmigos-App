@@ -1,0 +1,6 @@
+{
+  "name": "RoAmigos",
+  "description": "RoAmigos - Social discovery platform to find your people, discover interesting places, and make memories together.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
